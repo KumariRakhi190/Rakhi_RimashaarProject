@@ -32,10 +32,14 @@ class OTPVerificationViewController: UIViewController {
     
     
     @IBAction func crossDidTapped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func resendCodeDidTapped(_ sender: Any) {
+        
+        // No API is provided to resend the OTP.
+        
+        
         remainingSeconds = 30
         resendButtonOultet.isEnabled = false
         resendButtonOultet.alpha = 0.1
@@ -60,7 +64,8 @@ class OTPVerificationViewController: UIViewController {
             .sink { [weak self] isVerificationDone in
                 guard let self = self else { return }
                 if isVerificationDone {
-                    Toast.show(message: "Verification is done. Account is created.")
+                    let welcomeViewController = storyboard?.instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
+                    navigationController?.pushViewController(welcomeViewController, animated: true)
                 }
             }
             .store(in: &viewModel.cancellables)

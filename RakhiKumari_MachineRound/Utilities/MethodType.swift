@@ -11,7 +11,7 @@ import Foundation
 
 enum MethodType: String {
     case post = "POST"
-    case get = "Get"
+    case get = "GET"
     case put = "PUT"
     case delete = "DELETE"
 }

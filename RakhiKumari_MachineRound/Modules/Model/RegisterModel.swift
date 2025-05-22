@@ -7,17 +7,19 @@
 
 import Foundation
 
-struct RegisterResponse: Codable {
+struct RegisterResponse: Decodable {
     let status: Int?
     let message: String?
-    let userID: Int?
-    let code: String?
+    let responseData: ResponseData?
 
     enum CodingKeys: String, CodingKey {
         case status
         case message
-        case userID = "user_id"
-        case code
+        case responseData = "data"
     }
 
+}
+
+struct ResponseData: Decodable{
+    let id: Int?
 }

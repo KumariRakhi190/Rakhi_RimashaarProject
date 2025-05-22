@@ -22,7 +22,7 @@ class SignUPViewModel {
             switch success {
             case true:
                 if let response = myResponse {
-                    self.registeredUserID = response.userID
+                    self.registeredUserID = response.responseData?.id
                 }
             case false:
                 self.errorMessage = error

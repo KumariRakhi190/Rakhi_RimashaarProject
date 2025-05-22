@@ -24,6 +24,8 @@ class SignUPViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         firstNameTextField.setLeftRightPadding(left: 15, right: 15)
+        lastNameTextField.setLeftRightPadding(left: 15, right: 15)
+        phoneEmailTextField.setLeftRightPadding(left: 15, right: 15)
     }
 
     @IBAction func getOTPDidTapped(_ sender: Any) {
@@ -31,18 +33,17 @@ class SignUPViewController: UIViewController {
         
         var parameters: [String: Any] = [
             "app_version": "1.0",
-            "device_model": "iPhone",
+            "device_model": "STK-L22",
             "device_token": "",
-            "device_type": "A", // I for iOS
+            "device_type": "A",
             "dob": "",
             "first_name": firstNameTextField.text?.trimmed() ?? "",
             "gender": "",
             "last_name": lastNameTextField.text?.trimmed() ?? "",
             "newsletter_subscribed": 0,
-            "os_version": UIDevice.current.systemVersion,
+            "os_version": "10",
             "password": "",
-            "phone_code": "965",
-            "lang": "en"
+            "phone_code": "91"
         ]
         
         // Determine whether input is email or phone
@@ -60,16 +61,6 @@ class SignUPViewController: UIViewController {
     }
     
     func bindData() {
-//        viewModel.$isLoading
-//            .sink { isLoading in
-//                if isLoading {
-//                    // Show loader
-//                } else {
-//                    // Hide loader
-//                }
-//            }
-//            .store(in: &viewModel.cancellables)
-
         viewModel.$registeredUserID
             .sink { [weak self] userID in
                 guard let self = self else { return }
@@ -110,11 +101,6 @@ class SignUPViewController: UIViewController {
             viewModel.errorMessage = message
             return false
         }
-
-//        if let msg = ValidationManager.validatePassword(password) {
-//            viewModel.errorMessage = message
-//            return false
-//        }
 
         return true
     }
