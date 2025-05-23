@@ -857,10 +857,10 @@ your email address or phoen number.</string>
                                 <rect key="frame" x="0.0" y="174" width="393" height="644"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wt-dl-Hb2">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="330"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M2Z-uh-ekD">
-                                                <rect key="frame" x="20" y="0.0" width="353" height="300"/>
+                                                <rect key="frame" x="20" y="0.0" width="353" height="330"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-HN-0PJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
@@ -905,16 +905,17 @@ your email address or phoen number.</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIK-2U-qeI">
-                                                        <rect key="frame" x="0.0" y="190" width="353" height="60"/>
-                                                        <string key="text">Successfully Account 
-Is Created</string>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIK-2U-qeI">
+                                                        <rect key="frame" x="0.0" y="190" width="353" height="90"/>
+                                                        <string key="text">Account Is Created 
+
+Successfully </string>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="30"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZI-2q-6Cj">
-                                                        <rect key="frame" x="0.0" y="265" width="353" height="15"/>
+                                                        <rect key="frame" x="0.0" y="295" width="353" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="VIk-0q-D2d"/>
                                                         </constraints>
@@ -923,7 +924,7 @@ Is Created</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjs-Zh-zpe">
-                                                        <rect key="frame" x="0.0" y="295" width="353" height="5"/>
+                                                        <rect key="frame" x="0.0" y="325" width="353" height="5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="5" id="ZMt-CV-zfK"/>
                                                         </constraints>

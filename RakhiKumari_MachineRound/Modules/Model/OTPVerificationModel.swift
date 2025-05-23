@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct OTPVerificationModel: Codable {
-    let status: Int?
-    let message: String?
+struct OTPVerificationModel: Decodable {
+    let success: Bool
+    let status: Int  // This is the actual status from the API
+    let message: String
+    
+    enum CodingKeys: String, CodingKey {
+        case success, status, message
+    }
+    
 }
